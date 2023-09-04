@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body {
+            background-image: url(neymar-brazil-2022-1668947300-97010.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        form > * {
+            display: block;
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+        #nao {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #ah{
+            text-align: center;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+        #abacate {
+            display: block;
+            margin: auto;
+            background-color: darkblue;
+            width: 50%;
+            height: calc(100vh - 160px);
+            border-radius: 10px;
+            box-shadow: 10px 10px 0 5px #212121;
+            color: blue;
+        }
+
+        #ney {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="nao">
+        <div id="ah">
+        <h1>Formulario do NeyNey</h1>
+        </div>
+        <div id="abacate">
+    <form action="">
+        <label for="pname">Primeiro Nome:</label>
+        <input type="text" id="pname" value="Neymar">
+
+        <label for="uname">Ultimo Nome:</label>
+        <input type="text" id="uname" value="Jr">
+
+        <label for="data">Data de Nascimento:</label>
+        <input type="date" id="data" value="05/02/1992">
+
+        <label for="cor">Cor Favorita:</label>
+        <input type="color" id="cor">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" value="neymardelas@gmail.com">
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" value="31">
+
+        <label for="username">Nome de Usuario:</label>
+        <input type="text" id="username" value="Neymar">
+
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" value="eusouumdelicia">
+
+         <label for="gsearch">Search Google:</label>
+        <input type="search" id="gsearch" value="Neymar">
+
+        <label for="phone">Numero de Telefone:</label>
+        <input type="tel" id="phone" value="(47) 9 9975-6097">
+        </div>
+    </form>
+    </div>
+</body>
+</html>
