@@ -18,11 +18,33 @@
                 alert(`Informe o Valor B`);
             }
             else{
-                alert(`Vamos Calcular`);
+                let soma = Number(valorA) / (Number(valorB)*Number(valorB));
+                document.getElementById("Soma").value = soma.toFixed(1).replace("." , ",");
             }
 
-            let soma = Number(valorA) / (Number(valorB)*Number(valorB));
-            document.getElementById("Soma").value = soma.toFixed(1).replace("." , ",");
+            let somaa = Number(valorA) / (Number(valorB)*Number(valorB));
+
+            if(somaa <= 16.5){
+                alert(`Seu IMC é Muito Abaixo do Peso`);
+            }
+            else if(somaa >= 17 && somaa < 18.5){
+                alert(`Seu IMC é Abaixo do Peso`);
+            }
+            else if(somaa >= 18.5 && somaa < 25){
+                alert(`Seu IMC é Peso Normal`);
+            }
+            else if(somaa >= 25 && somaa < 30){
+                alert(`Seu IMC é Acima do Peso`);
+            }
+            else if(somaa >= 30 && somaa < 35){
+                alert(`Seu IMC é Obesidade Grau I`);
+            }
+            else if(somaa >= 35 && somaa < 40){
+                alert(`Seu IMC é Obesidade Grau II`);
+            }
+            else{
+                alert(`Seu IMC é Obesidade Grau III`);
+            }
 
         }
 
@@ -84,7 +106,7 @@
 <body>
     <div id="nao">
         <div id="ah">
-        <h1>Calculadora do NeyNey</h1>
+        <h1>Calculadora de IMC do NeyNey</h1>
         </div>
         <div id="abacate">
     <form action="">
